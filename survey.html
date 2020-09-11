@@ -6,12 +6,22 @@
     <title>Survey</title>
 </head>
 <body>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
+    <form action="mailto:ayakhymets@gmail.com" method="post" enctype="text/plain">
+        <h3>Are you football fan?</h3>
+        <input type="radio" id="fan_yes" name="fan" value="Yes">
+        <label for="fan_yes">Yes</label><br>
+        <input type="radio" id="fan_no" name="fan" value="No">
+        <label for="fan_no">No</label><br>
+        <h3>What's your favorite team?</h3>
+        <input type="text" id="team" name="team"><br>
+        <h3>Which player won Ballon d'Or?</h3>
+        <input type="checkbox" id="Shevchenko" name="Shevchenko">
+        <label for="Shevchenko">Shevchenko</label><br>
+        <input type="checkbox" id="Ronaldo" name="Ronaldo">
+        <label for="Ronaldo">Ronaldo</label><br>
+        <input type="checkbox" id="Messi" name="Messi">
+        <label for="Messi">Messi</label><br>
+        <input type="submit" value="Email Form">
     </form>
 </body>
 </html>
